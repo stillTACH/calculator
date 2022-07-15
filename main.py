@@ -4,8 +4,11 @@ from functools import reduce
 def add(*numbers):
     return sum(*numbers)
 
-def diff(number1,number2):
-    return number1 - number2
+def diff(*numbers):
+    sub1 = numbers[0][0]
+    for num1 in numbers[0][1:]:
+        sub1 = sub1 - num1
+    return sub1
 
 def product(*numbers):
     def mult(x,y):
@@ -48,7 +51,7 @@ if __name__ == '__main__':
 
             if user_in == "2":
 
-                print(diff(number1,number2))
+                print(diff(numbers))
 
             if user_in == "3":
 
