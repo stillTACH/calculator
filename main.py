@@ -1,34 +1,71 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+from functools import reduce
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-def sum(number1,number2):
-    return number1 + number2
+def add(*numbers):
+    return sum(*numbers)
 
 def diff(number1,number2):
     return number1 - number2
 
-def multiply(number1,number2):
-    return number1 * number2
+def product(*numbers):
+    def mult(x,y):
+        return x*y
+    return reduce(mult,*numbers)
+
+def divide(number1,number2):
+    return number1 / number2
 
 
-# Press the green button in the gutter to run the script.
+
+
+
 if __name__ == '__main__':
-    thesum = sum(5,2)
-    print(thesum)
-    thesum = sum(8,4)
-    print(thesum)
-    thediff = diff(3,5)
-    print(thediff)
-    print(sum(4,diff(3,8)))
+    while True:
+        try:
+            print("""
+            1. add
+            2. diff
+            3. product
+            4. divide
+            5. exit
+            """)
+            user_in = input("Enter your selection:")
+            if user_in == "5":
+                break
+
+            numbers = []
+            while True:
+                try:
+                    num1 = int(input("Enter number:"))
+                    numbers.append(num1)
+                except Exception as e:
+                    break
+
+
+            if user_in == "1":
+
+                print(add(numbers))
+
+            if user_in == "2":
+
+                print(diff(number1,number2))
+
+            if user_in == "3":
+
+                print(product(numbers))
+
+            if user_in == "4":
+
+                print(divide(number1, number2))
+        except Exception as e:
+            print(f"An exception happened, start over\nERROR: {e}")
 
 
 
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    # thesum = add(5, 2)
+    # print(thesum)
+    # thesum = add(8, 4)
+    # print(thesum)
+    # thediff = diff(3,5)
+    # print(thediff)
+    # print(add(4, diff(3, 8)))
