@@ -15,8 +15,11 @@ def product(*numbers):
         return x*y
     return reduce(mult,*numbers)
 
-def divide(number1,number2):
-    return number1 / number2
+def divide(*numbers):
+    sub1 = numbers[0][0]
+    for num1 in numbers[0][1:]:
+        sub1 /= num1
+    return sub1
 
 
 
@@ -59,7 +62,7 @@ if __name__ == '__main__':
 
             if user_in == "4":
 
-                print(divide(number1, number2))
+                print(divide(numbers))
         except Exception as e:
             print(f"An exception happened, start over\nERROR: {e}")
 
