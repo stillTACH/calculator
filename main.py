@@ -18,7 +18,7 @@ def product(*numbers):
 def divide(*numbers):
     sub1 = numbers[0][0]
     for num1 in numbers[0][1:]:
-        sub1 = sub1 / num1
+        sub1 /= num1
     return sub1
 
 
