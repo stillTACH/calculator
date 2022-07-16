@@ -1,0 +1,55 @@
+[33mcommit 8b0d7dfc75f538334c09f5f008f47e4e7e9555dd[m[33m ([m[1;36mHEAD -> [m[1;32mcalc-v3[m[33m, [m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Merge: 91baf29 3fbb905
+Author: stillTACH <109333010+stillTACH@users.noreply.github.com>
+Date:   Fri Jul 15 16:13:50 2022 -0700
+
+    Merge pull request #2 from stillTACH/calc-v2.1
+    
+    Updated divide function.
+
+[33mcommit 3fbb9058794711755d8bad9abe61f05614b7fb4e[m[33m ([m[1;31morigin/calc-v2.1[m[33m)[m
+Author: stillTACH <109333010+stillTACH@users.noreply.github.com>
+Date:   Fri Jul 15 16:13:38 2022 -0700
+
+    Update main.py
+    
+    Co-authored-by: mutetext <98437101+mutetext@users.noreply.github.com>
+
+[33mcommit 9097f8731a39636c2768508ffa44379a1838b08b[m[33m ([m[1;32mcalc-v2.1[m[33m)[m
+Author: Tach <felixhanssel@aol.com>
+Date:   Fri Jul 15 16:10:24 2022 -0700
+
+    Updated divide function.
+
+[33mcommit 91baf29215e4b94504ceaf2ece25c7f65edc7822[m
+Merge: 40f00d4 2a1bc8f
+Author: stillTACH <109333010+stillTACH@users.noreply.github.com>
+Date:   Fri Jul 15 15:58:38 2022 -0700
+
+    Merge pull request #1 from stillTACH/calc-v2
+    
+    Updated subtraction function
+
+[33mcommit 2a1bc8f43bfab6cc49f2816caa4ac06cf2c3e13f[m[33m ([m[1;31morigin/calc-v2[m[33m, [m[1;32mcalc-v2[m[33m)[m
+Author: Tach <felixhanssel@aol.com>
+Date:   Fri Jul 15 15:54:25 2022 -0700
+
+    Updated subtraction function
+
+[33mcommit 40f00d482a4b455f88472c30765e31d2c3b162d2[m
+Author: Tach <felixhanssel@aol.com>
+Date:   Thu Jul 14 22:28:42 2022 -0700
+
+    Working sum and product funcs
+
+[33mcommit 711f29a0b396017bd4684ad257b55f3e3a35bed5[m
+Author: Tach <felixhanssel@aol.com>
+Date:   Thu Jul 14 19:50:42 2022 -0700
+
+    Added sums, subtraction, and multiplication
+
+[33mcommit d2842ad4964fdffc2ce7ae141fa5d090006fbea2[m
+Author: Tach <felixhanssel@aol.com>
+Date:   Thu Jul 14 19:14:34 2022 -0700
+
+    first commit
