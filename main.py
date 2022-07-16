@@ -2,12 +2,13 @@ from functools import reduce
 
 
 def add(*numbers):
-    return sum(*numbers)
+    x = sum(*numbers)
+    return x
 
 def diff(*numbers):
     sub1 = numbers[0][0]
     for num1 in numbers[0][1:]:
-        sub1 = sub1 - num1
+        sub1 -= num1
     return sub1
 
 def product(*numbers):
@@ -20,7 +21,6 @@ def divide(*numbers):
     for num1 in numbers[0][1:]:
         sub1 /= num1
     return sub1
-
 
 
 
@@ -46,32 +46,19 @@ if __name__ == '__main__':
                     numbers.append(num1)
                 except Exception as e:
                     break
-
+# make input validation work here..
 
             if user_in == "1":
-
-                print(add(numbers))
-
+                results = add(numbers)
+                print(results)
             if user_in == "2":
-
                 print(diff(numbers))
-
             if user_in == "3":
-
                 print(product(numbers))
-
             if user_in == "4":
-
                 print(divide(numbers))
+
         except Exception as e:
             print(f"An exception happened, start over\nERROR: {e}")
 
 
-
-    # thesum = add(5, 2)
-    # print(thesum)
-    # thesum = add(8, 4)
-    # print(thesum)
-    # thediff = diff(3,5)
-    # print(thediff)
-    # print(add(4, diff(3, 8)))
